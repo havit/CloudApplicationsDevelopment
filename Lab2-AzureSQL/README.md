@@ -157,7 +157,8 @@ public class Worker : IHostedService, IDisposable
 	{
 		timer?.Dispose();
 	}
-}```
+}
+```
 
 Výše uvedený kód je psán formou čisté konzolové aplikace (s využitím `IHost`). Prostuduj možnosti využití Azure WebJobs SDK: https://docs.microsoft.com/en-us/azure/app-service/webjobs-sdk-how-to
 
