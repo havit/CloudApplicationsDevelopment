@@ -25,6 +25,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebJob", "Lab2-AzureSQL\MyWebJob\MyWebJob.csproj", "{FE6343A0-89F6-4E28-AB28-8FD2AC547124}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab3-AzureBlobStorage", "Lab3-AzureBlobStorage", "{F03ABB75-61A3-47AE-AEC9-889DFE4D8334}"
+	ProjectSection(SolutionItems) = preProject
+		Lab3-AzureBlobStorage\README.md = Lab3-AzureBlobStorage\README.md
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebApplication", "Lab3-AzureBlobStorage\MyWebApplication\MyWebApplication.csproj", "{8EE05341-377E-4839-9726-BBA4FC3F0512}"
 EndProject
