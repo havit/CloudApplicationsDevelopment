@@ -22,7 +22,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab2-AzureSQL", "Lab2-Azure
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebApplication", "Lab2-AzureSQL\MyWebApplication\MyWebApplication.csproj", "{AD5DA513-BB55-4C16-B6CB-033A3C8B8570}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebJob", "Lab2-AzureSQL\MyWebJob\MyWebJob.csproj", "{FE6343A0-89F6-4E28-AB28-8FD2AC547124}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebJob", "Lab2-AzureSQL\MyWebJob\MyWebJob.csproj", "{FE6343A0-89F6-4E28-AB28-8FD2AC547124}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab3-AzureBlobStorage", "Lab3-AzureBlobStorage", "{F03ABB75-61A3-47AE-AEC9-889DFE4D8334}"
+	ProjectSection(SolutionItems) = preProject
+		Lab3-AzureBlobStorage\README.md = Lab3-AzureBlobStorage\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebApplication", "Lab3-AzureBlobStorage\MyWebApplication\MyWebApplication.csproj", "{8EE05341-377E-4839-9726-BBA4FC3F0512}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +49,10 @@ Global
 		{FE6343A0-89F6-4E28-AB28-8FD2AC547124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE6343A0-89F6-4E28-AB28-8FD2AC547124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE6343A0-89F6-4E28-AB28-8FD2AC547124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE05341-377E-4839-9726-BBA4FC3F0512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE05341-377E-4839-9726-BBA4FC3F0512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE05341-377E-4839-9726-BBA4FC3F0512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE05341-377E-4839-9726-BBA4FC3F0512}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +61,7 @@ Global
 		{AE198DC2-F387-403D-863C-8D8771EA7777} = {929941C4-D08B-44DA-BA52-7772908F0920}
 		{AD5DA513-BB55-4C16-B6CB-033A3C8B8570} = {57C0724C-157F-4148-B66D-36D346A824C7}
 		{FE6343A0-89F6-4E28-AB28-8FD2AC547124} = {57C0724C-157F-4148-B66D-36D346A824C7}
+		{8EE05341-377E-4839-9726-BBA4FC3F0512} = {F03ABB75-61A3-47AE-AEC9-889DFE4D8334}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9A5A1CB7-359D-4F9A-BFE9-F7A674BEA958}
