@@ -11,4 +11,5 @@ Lektoři:
 * [Lab 1 - Azure App Service - deployment jednoduché WebSite z Visual Studia](./Lab1-AppServicesDeployment/)
 * [Lab 2 - Azure SQL a Azure WebJobs](./Lab2-AzureSQL/)
 * [Lab 3 - Azure Blob Storage](./Lab3-AzureBlobStorage/)
+* [Lab 4 - Azure Cosmos DB](./Lab4-AzureCosmosDB/)
 
