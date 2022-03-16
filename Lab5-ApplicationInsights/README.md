@@ -4,6 +4,6 @@
 
 * Založíme Application Insights
 * Do aplikace přidáme nuget balíček [Microsoft.ApplicationInsights.AspNetCore](https://www.nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore).
-* Do services zaregistrujeme služby application insights (services.AddApplicationInsights()).
+* Do services zaregistrujeme služby application insights (services.AddApplicationInsightsTelemetry()).
 * Do appsettings.json nastavíme InstrumentationKey na hodnotu ze založené služby.
 
