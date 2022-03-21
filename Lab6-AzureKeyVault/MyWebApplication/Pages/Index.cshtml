@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@using Azure.Storage.Blobs;
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1 class="display-1">Hello NSWI152!</h1>
+<h2>Blobs</h2>
+@if (Model.Blobs.Count == 0)
+{
+    <p>There is no blob.</p>
+}
+else
+{
+    <ul>
+    @foreach (var blob in Model.Blobs.OrderBy(b => b.Name))
+    {
+        <li>@blob.Name (<a href="@Url.Page("Index", "DownloadBlob", new { blobName = blob.Name })">download</a>)</li>
+    }
+    </ul>
+}
