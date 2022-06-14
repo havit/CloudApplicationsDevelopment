@@ -1,7 +1,13 @@
 var builder = WebApplication.CreateBuilder(args);
 
+if (builder.Environment.IsProduction())
+{
+	builder.Configuration.AddAzureKeyVault(new Uri("https://cloud-app-dev-vault.vault.azure.net/"), new Azure.Identity.DefaultAzureCredential());
+}
+
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]);
 
 var app = builder.Build();
 

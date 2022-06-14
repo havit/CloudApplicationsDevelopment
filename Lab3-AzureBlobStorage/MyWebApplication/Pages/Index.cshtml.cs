@@ -8,8 +8,9 @@ namespace MyWebApplication.Pages
 	public class IndexModel : PageModel
 	{
 		// TODO: Hodnoty by bylo správné dát do konfigurace. Pro přehlednost a mít vše na jednom místě za účelem studia, nechávám tuto zjednodušenou variantu.
-		private const string AzureStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=...;AccountKey=...;EndpointSuffix=core.windows.net";
-		private const string AzureStorageContainerName = "mycontainer";
+		private const string AzureStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=azureappdevelopment;AccountKey=HBa5vTZMNe4Udcqq2TMfX0rbBVRGCukmPVm7ytLnP1gCvfLn3IWVLfd2ZcpWa9hlyU2EdT+vK+eZH6AKDwL41Q==;EndpointSuffix=core.windows.net";
+		private const string AzureStorageContainerName = "privatecontainer";
+		private const string AzureStorageName = "azureappdevelopment";
 
 		public List<BlobItem>? Blobs { get; set; }
 
@@ -28,7 +29,8 @@ namespace MyWebApplication.Pages
 
 		private BlobContainerClient CreateClient()
 		{
-			return new Azure.Storage.Blobs.BlobContainerClient(AzureStorageConnectionString, AzureStorageContainerName);
+			string containerEndpoint = $"https://{AzureStorageName}.blob.core.windows.net/{AzureStorageContainerName}";
+			return new BlobContainerClient(new Uri(containerEndpoint), new Azure.Identity.DefaultAzureCredential());
 		}
 	}
 }
