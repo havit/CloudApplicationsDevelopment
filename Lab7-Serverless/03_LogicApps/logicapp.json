@@ -1,0 +1,108 @@
+{
+    "definition": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "actions": {
+            "GetSign": {
+                "inputs": {
+                    "body": "@variables('dateOfBirth')",
+                    "function": {
+                        "id": "/subscriptions/ce9fbc28-01f6-4825-b174-959fd324b975/resourceGroups/MFF2023RG/providers/Microsoft.Web/sites/mffazurefunction2/functions/GetSign"
+                    }
+                },
+                "runAfter": {
+                    "Initialize_variable": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "Function"
+            },
+            "Initialize_variable": {
+                "inputs": {
+                    "variables": [
+                        {
+                            "name": "dateOfBirth",
+                            "type": "string",
+                            "value": "@triggerBody()?['ContentData']"
+                        }
+                    ]
+                },
+                "runAfter": {},
+                "type": "InitializeVariable"
+            },
+            "Send_email_(V2)": {
+                "inputs": {
+                    "body": {
+                        "Body": "<p>@{concat('Znamení je ',body('GetSign'))}</p>",
+                        "Subject": "My logic app",
+                        "To": "vaclavek@jinsoft.cz"
+                    },
+                    "host": {
+                        "connection": {
+                            "name": "@parameters('$connections')['gmail']['connectionId']"
+                        }
+                    },
+                    "method": "post",
+                    "path": "/v2/Mail"
+                },
+                "runAfter": {
+                    "GetSign": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "ApiConnection"
+            }
+        },
+        "contentVersion": "1.0.0.0",
+        "outputs": {},
+        "parameters": {
+            "$connections": {
+                "defaultValue": {},
+                "type": "Object"
+            }
+        },
+        "triggers": {
+            "When_events_are_available_in_Event_Hub": {
+                "evaluatedRecurrence": {
+                    "frequency": "Minute",
+                    "interval": 1
+                },
+                "inputs": {
+                    "host": {
+                        "connection": {
+                            "name": "@parameters('$connections')['eventhubs']['connectionId']"
+                        }
+                    },
+                    "method": "get",
+                    "path": "/@{encodeURIComponent('myeventhub1')}/events/batch/head",
+                    "queries": {
+                        "consumerGroupName": "$Default",
+                        "contentType": "text/plain",
+                        "maximumEventsCount": 50
+                    }
+                },
+                "recurrence": {
+                    "frequency": "Minute",
+                    "interval": 1
+                },
+                "splitOn": "@triggerBody()",
+                "type": "ApiConnection"
+            }
+        }
+    },
+    "parameters": {
+        "$connections": {
+            "value": {
+                "eventhubs": {
+                    "connectionId": "/subscriptions/ce9fbc28-01f6-4825-b174-959fd324b975/resourceGroups/MFF2023RG/providers/Microsoft.Web/connections/eventhubs",
+                    "connectionName": "eventhubs",
+                    "id": "/subscriptions/ce9fbc28-01f6-4825-b174-959fd324b975/providers/Microsoft.Web/locations/westeurope/managedApis/eventhubs"
+                },
+                "gmail": {
+                    "connectionId": "/subscriptions/ce9fbc28-01f6-4825-b174-959fd324b975/resourceGroups/MFF2023RG/providers/Microsoft.Web/connections/gmail-1",
+                    "connectionName": "gmail-1",
+                    "id": "/subscriptions/ce9fbc28-01f6-4825-b174-959fd324b975/providers/Microsoft.Web/locations/westeurope/managedApis/gmail"
+                }
+            }
+        }
+    }
+}

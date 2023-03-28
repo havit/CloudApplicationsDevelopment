@@ -31,11 +31,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab3-AzureBlobStorage", "La
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebApplication", "Lab3-AzureBlobStorage\MyWebApplication\MyWebApplication.csproj", "{8EE05341-377E-4839-9726-BBA4FC3F0512}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultDemo", "Lab6-AzureKeyVault\KeyVaultDemo\KeyVaultDemo.csproj", "{E6B02F02-6E34-401A-B928-AB9EA2C12805}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyVaultDemo", "Lab6-AzureKeyVault\KeyVaultDemo\KeyVaultDemo.csproj", "{E6B02F02-6E34-401A-B928-AB9EA2C12805}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab6-AzureKeyVault", "Lab6-AzureKeyVault", "{18405AA7-7BF0-462A-8272-C4B541A306EA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebApplication", "Lab6-AzureKeyVault\MyWebApplication\MyWebApplication.csproj", "{4F4721DD-2D80-41A8-B62C-A1E6210C0D85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab7-Serverless", "Lab7-Serverless", "{C637F02C-4481-46AB-BB38-66CC29EC621A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventHubPublisher", "Lab7-Serverless\01_EventHub\EventHubPublisher\EventHubPublisher.csproj", "{A19B0982-35C1-40BC-8CA0-5B4EE3C7991B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvetHubConsumer", "Lab7-Serverless\01_EventHub\EvetHubConsumer\EvetHubConsumer.csproj", "{6005A5C5-E7F7-4419-84BA-97DB8A0F7003}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZodiacFunction", "Lab7-Serverless\02_AzureFunctions\ZodiacFunction\ZodiacFunction.csproj", "{AB11506B-7BA3-4D04-92D6-E93EFD9452F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +75,18 @@ Global
 		{4F4721DD-2D80-41A8-B62C-A1E6210C0D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F4721DD-2D80-41A8-B62C-A1E6210C0D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F4721DD-2D80-41A8-B62C-A1E6210C0D85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A19B0982-35C1-40BC-8CA0-5B4EE3C7991B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19B0982-35C1-40BC-8CA0-5B4EE3C7991B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19B0982-35C1-40BC-8CA0-5B4EE3C7991B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19B0982-35C1-40BC-8CA0-5B4EE3C7991B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6005A5C5-E7F7-4419-84BA-97DB8A0F7003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6005A5C5-E7F7-4419-84BA-97DB8A0F7003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6005A5C5-E7F7-4419-84BA-97DB8A0F7003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6005A5C5-E7F7-4419-84BA-97DB8A0F7003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB11506B-7BA3-4D04-92D6-E93EFD9452F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB11506B-7BA3-4D04-92D6-E93EFD9452F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB11506B-7BA3-4D04-92D6-E93EFD9452F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB11506B-7BA3-4D04-92D6-E93EFD9452F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +98,9 @@ Global
 		{8EE05341-377E-4839-9726-BBA4FC3F0512} = {F03ABB75-61A3-47AE-AEC9-889DFE4D8334}
 		{E6B02F02-6E34-401A-B928-AB9EA2C12805} = {18405AA7-7BF0-462A-8272-C4B541A306EA}
 		{4F4721DD-2D80-41A8-B62C-A1E6210C0D85} = {18405AA7-7BF0-462A-8272-C4B541A306EA}
+		{A19B0982-35C1-40BC-8CA0-5B4EE3C7991B} = {C637F02C-4481-46AB-BB38-66CC29EC621A}
+		{6005A5C5-E7F7-4419-84BA-97DB8A0F7003} = {C637F02C-4481-46AB-BB38-66CC29EC621A}
+		{AB11506B-7BA3-4D04-92D6-E93EFD9452F6} = {C637F02C-4481-46AB-BB38-66CC29EC621A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9A5A1CB7-359D-4F9A-BFE9-F7A674BEA958}
