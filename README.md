@@ -14,7 +14,7 @@ Lektoři:
 * [Lab 4 - Azure Cosmos DB](./Lab4-AzureCosmosDB/)
 * [Lab 5 - Application Insights](./Lab5-ApplicationInsights/)
 * [Lab 6 - Azure Key Vault](./Lab6-AzureKeyVault/)
-* Lab 7 - Serverless
+* Lab 7 - Serverless [(presentation)](./Lab7-Serverless/Serverless-computing.pptx)
     * [Lab 7a - Azure Event Hub](./Lab7-Serverless/01_EventHub/)
     * [Lab 7b - Azure Function](./Lab7-Serverless/02_AzureFunctions/)
     * [Lab 7c - Azure Logic App](./Lab7-Serverless/03_LogicApps/)
