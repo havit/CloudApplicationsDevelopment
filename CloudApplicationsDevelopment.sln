@@ -45,6 +45,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvetHubConsumer", "Lab7-Ser
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZodiacFunction", "Lab7-Serverless\02_AzureFunctions\ZodiacFunction\ZodiacFunction.csproj", "{AB11506B-7BA3-4D04-92D6-E93EFD9452F6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab8-CognitiveServices", "Lab8-CognitiveServices", "{6CD26745-BF56-4616-9B0C-532CAF92FCEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_ImageObjectsAnalysis", "Lab8-CognitiveServices\01_ComputerVision\01_ImageObjectsAnalysis\01_ImageObjectsAnalysis.csproj", "{79E0AA48-26B7-43DF-842C-7E95CF6B8961}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_OCR", "Lab8-CognitiveServices\01_ComputerVision\02_OCR\02_OCR.csproj", "{2B3C853B-4DD5-4A91-B77C-E74CD9011318}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_FaceDetection", "Lab8-CognitiveServices\01_ComputerVision\03_FaceDetection\03_FaceDetection.csproj", "{5464C72A-3C66-4E74-B248-A602E7961A55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +95,18 @@ Global
 		{AB11506B-7BA3-4D04-92D6-E93EFD9452F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB11506B-7BA3-4D04-92D6-E93EFD9452F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB11506B-7BA3-4D04-92D6-E93EFD9452F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79E0AA48-26B7-43DF-842C-7E95CF6B8961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E0AA48-26B7-43DF-842C-7E95CF6B8961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E0AA48-26B7-43DF-842C-7E95CF6B8961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E0AA48-26B7-43DF-842C-7E95CF6B8961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B3C853B-4DD5-4A91-B77C-E74CD9011318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B3C853B-4DD5-4A91-B77C-E74CD9011318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B3C853B-4DD5-4A91-B77C-E74CD9011318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B3C853B-4DD5-4A91-B77C-E74CD9011318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5464C72A-3C66-4E74-B248-A602E7961A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5464C72A-3C66-4E74-B248-A602E7961A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5464C72A-3C66-4E74-B248-A602E7961A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5464C72A-3C66-4E74-B248-A602E7961A55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +121,9 @@ Global
 		{A19B0982-35C1-40BC-8CA0-5B4EE3C7991B} = {C637F02C-4481-46AB-BB38-66CC29EC621A}
 		{6005A5C5-E7F7-4419-84BA-97DB8A0F7003} = {C637F02C-4481-46AB-BB38-66CC29EC621A}
 		{AB11506B-7BA3-4D04-92D6-E93EFD9452F6} = {C637F02C-4481-46AB-BB38-66CC29EC621A}
+		{79E0AA48-26B7-43DF-842C-7E95CF6B8961} = {6CD26745-BF56-4616-9B0C-532CAF92FCEE}
+		{2B3C853B-4DD5-4A91-B77C-E74CD9011318} = {6CD26745-BF56-4616-9B0C-532CAF92FCEE}
+		{5464C72A-3C66-4E74-B248-A602E7961A55} = {6CD26745-BF56-4616-9B0C-532CAF92FCEE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9A5A1CB7-359D-4F9A-BFE9-F7A674BEA958}
