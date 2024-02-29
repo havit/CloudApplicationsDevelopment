@@ -3,7 +3,7 @@
 Navážeme na projekt, který vznikl v [LAB1](../Lab1-AzureWebSiteDeployment/).
 
 1. Založíme a nasadíme Azure WebJob:
-   1. V *Solution Exploreru* přidejte do solution nový projekt typu *Console Application* (.NET6).
+   1. V *Solution Exploreru* přidejte do solution nový projekt typu *Console Application* (.NET6 nebo novější).
    1. Klikneme v *Solution Exploreru* pravým tlačítkem na nový projekt a vybereme volbu *Publish*.
    1. Zvolíme jako target *Azure*.
    4. V dalším kroku zvolíme specific target *Azure WebJobs*:
