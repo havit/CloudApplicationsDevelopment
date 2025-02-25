@@ -23,7 +23,7 @@ Navážeme na projekt, který vznikl v [LAB1](../Lab1-AzureWebSiteDeployment/).
         ![05 Azure SQL Create](img/05-AzureSQL-Create.png)
     3. V rámci zakládání databáze potřebujeme založit nový *SQL server*.
 		![06 Azure SQL Server](img/06-AzureSQL-Server.png)
-	1. V dalších krocích průvodce si prostudujte možné volby při zakládání SQL, všude můžete ponechat výchozí nastavení, aktivujeme pouze volbu *Allow Azure services and resources to access this server* (kdo by nyní zapomněl, najde ji později v sekci *Firewalls and virtual networks* v nastavení založeného Azure SQL Serveru).
+	1. V dalších krocích průvodce si prostudujte možné volby při zakládání SQL, všude můžete ponechat výchozí nastavení, aktivujeme pouze volbu _Public endpoint_ s nastavením _Firewall rules:_ *Allow Azure services and resources to access this server* a _Add current client IP address_ (kdo by nyní zapomněl, najde ji později v sekci *Firewalls and virtual networks* v nastavení založeného Azure SQL Serveru).
 
 
 1. Připojíme se k Azure SQL z Visual Studia a připravíme schéma databáze:
