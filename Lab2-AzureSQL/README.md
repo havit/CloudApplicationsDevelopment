@@ -162,6 +162,8 @@ public class Worker : IHostedService, IDisposable
 
 Výše uvedený kód je psán formou čisté konzolové aplikace (s využitím `IHost`). Prostuduj možnosti využití Azure WebJobs SDK: https://docs.microsoft.com/en-us/azure/app-service/webjobs-sdk-how-to
 
+
+
 ## Konfigurace
 Zdrojové kódy WebJobu se odkazují na konfigurační volby, které potřebujeme aplikaci poskytnout.
 
@@ -179,17 +181,24 @@ Zdrojové kódy WebJobu se odkazují na konfigurační volby, které potřebujem
 		}
 	}
    ```
-2. Abychom nemuseli produkční konfiguraci udržovat v repozitáři zdrojových kódů nebo jinak zařizovat při nasazování (např. skrze `appSettings.Production.json`), využijeme možnost injectování konfigurace přímo v Azure App Service v sekci *Configuration* (první záložka *Application Settings*):
+2. Abychom nemuseli produkční konfiguraci udržovat v repozitáři zdrojových kódů nebo jinak zařizovat při nasazování (např. skrze `appSettings.Production.json`), využijeme možnost injectování konfigurace přímo v Azure App Service v sekci *Environment Variables* (první záložka *App Settings* i druhá záložka *Connection strings*). Pro zanořování v objektové hierarchii konfigurace se zde používá oddělovač `__` (dvě podtržítka):
 	![09 Azure App Service Configuration](img/09-AzureAppService-Configuration.png)
 
 	Na některé z pozdějších lekcí uvidíte ještě možnosti služby *Azure Key Vault*, která slouží k bezpečnému uchovávání secrets pro aplikace.
+	
+	[Pro odesílání e-mailů z Azure můžete využít službu *SendGrid*](https://www.twilio.com/docs/sendgrid/for-developers/partners/microsoft-azure-2021), aktuálně lze založit `Free` variantu s limitem 100 e-mailů denně.
+	
+	
 
 ## Publish
 1. Nyní můžeme WebJob vypublikovat (pravým tlačítkem na project v *Solution Exploreru*, volba *Publish*).
 2. WebJob si můžeme zkontrolovat v Azure Portal v cílové Azure App Service, v sekci WebJobs:
 	![10 Azure App Service Web Jobs](img/10-AzureAppService-WebJobs.png)
 
+
+
 ## Test funkčnosti
+
 1. Pro vložení testovacího záznamu do DB můžeme použít Query Exploreru v Azure Portale, který je u Azure SQL Database k dispozici:
 	![11 Azur S Q L Query Explorer](img/11-AzureSQL-QueryExplorer.png)
 2. Za pozozrnost stojí volba *Logs*, kde si můžete prohlížet konzolový výstup (stdout) WebJob aplikace.
