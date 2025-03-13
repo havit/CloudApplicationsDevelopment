@@ -2,7 +2,7 @@
 
 *Zadání: Založte Logic App, která přijme signál z našeho Event Hubu, zavolá naši Azure Function a výsledek pošle e-mailem. Prozkoumejte v Azure Portále spuštěnou Logic App*
 
-1. Založte Logic App v Azure Portále
+1. Založte Logic App v Azure Portále. Zvolte Consumption pricing plán (kvůli pricingu)
 
 ![](img/logicapp00.png)
 ![](img/logicapp01.png)

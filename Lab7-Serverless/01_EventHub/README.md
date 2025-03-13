@@ -1,6 +1,6 @@
-# LAB 7a - Vyvoření Event Hubu a použití
+# LAB 7d - Vyvoření Event Hubu a použití
 
-*Zadání: Založte v Azure nový Event Hub, připojte se do něj z Visual Studia, vypublikujte do něj novou událost a tuto přečtěte. Prozkoumejte Event Hub v Azure Portále.*
+_Zadání: Založte v Azure nový Event Hub, připojte se do něj z Visual Studia, vypublikujte do něj novou událost a tuto přečtěte. Prozkoumejte Event Hub v Azure Portále._
 
 1. V Azure Portále najděte založte nový resource Event Hub
 
