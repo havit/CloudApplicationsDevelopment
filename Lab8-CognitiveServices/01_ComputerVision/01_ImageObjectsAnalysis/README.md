@@ -14,8 +14,4 @@
 
 ![](img/computervision3.png)
 
-4. Vyzkoušejte také [konzoli](https://westeurope.dev.cognitive.microsoft.com/docs/services/computer-vision-v3-2/)
-
-![](img/computervision4.png)
-
 5. Určitě nezapomeňte vyzkoušet [Vision studio](https://portal.vision.cognitive.azure.com/)
