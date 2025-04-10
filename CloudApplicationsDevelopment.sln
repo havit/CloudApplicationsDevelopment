@@ -55,6 +55,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_FaceDetection", "Lab8-Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBus", "Lab7-Serverless\01_ServiceBus\ServiceBus.csproj", "{56282523-2906-F228-E933-DB93FF103F71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat", "Lab9-OpenAI\Chat\Chat.csproj", "{F8745520-1C68-4582-B924-A2270734C7DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +115,10 @@ Global
 		{56282523-2906-F228-E933-DB93FF103F71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56282523-2906-F228-E933-DB93FF103F71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56282523-2906-F228-E933-DB93FF103F71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8745520-1C68-4582-B924-A2270734C7DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8745520-1C68-4582-B924-A2270734C7DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8745520-1C68-4582-B924-A2270734C7DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8745520-1C68-4582-B924-A2270734C7DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
