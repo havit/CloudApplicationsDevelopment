@@ -7,8 +7,19 @@ Navážeme na projekt, který vznikl v [LAB1](../Lab1-AzureWebSiteDeployment/).
 * Dáme možnost stažení souboru (skrz aplikaci)
 
 1. Připravíme Azure Storage
-	1. Založíme Azure Storage (vyplníme název, zvolíme lokalitu a georedundanci dle vlastního uvážení). Ostatní hodnoty mohou zůstav ve výchozím nastavení.
+   1. Založíme Azure Storage. Vyplníme: 
+
+	* Název storage (lowercase, 3-24 znaků, pouze písmena a číslice)
+	* Lokalita
+	* Preferred storage type (Azure Blob Storage or Azure Data Lake Storage Gen 2)
+	* Primary workload (Cloud native)
+	* Performance (Standard)
+	* Redundancy (Locally-redundant storage (LRS))
+	
+      Ostatní hodnoty mohou zůstav ve výchozím nastavení.
+
 	![01 Create Azure Storage](img/01-Create-Azure-Storage.png)
+
 	2. Vytvoříme container
 	![02 Create Container](img/02-Create-Container.png)
 	3. Do aplikace budeme potřebovat ještě connection string.

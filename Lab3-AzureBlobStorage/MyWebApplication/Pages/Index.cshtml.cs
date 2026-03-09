@@ -18,15 +18,17 @@ namespace MyWebApplication.Pages
 			Blobs = CreateClient().GetBlobs().ToList();
 		}
 
-		public FileStreamResult OnGetDownloadBlob(string blobName)
-		{
-			var blobClient = CreateClient().GetBlobClient(blobName);
-			var contentType = blobClient.GetProperties().Value.ContentType;
-			var stream = blobClient.OpenRead(); // není třeba řešit Dispose - stream nám uzavře infrastruktura Razor Pages.
-			return new FileStreamResult(stream, contentType);
-		}
+        public async Task<FileStreamResult> OnGetDownloadBlob(string blobName)
+        {            
+            var blobClient = CreateClient().GetBlobClient(blobName);
+            var stream = await blobClient.DownloadStreamingAsync();
+            return File(
+				stream.Value.Content,
+				stream.Value.Details.ContentType ?? "application/octet-stream",
+				blobName);
+        }
 
-		private BlobContainerClient CreateClient()
+        private BlobContainerClient CreateClient()
 		{
 			return new Azure.Storage.Blobs.BlobContainerClient(AzureStorageConnectionString, AzureStorageContainerName);
 		}
