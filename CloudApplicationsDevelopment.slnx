@@ -28,8 +28,10 @@
     <Project Path="Lab8-CognitiveServices/01_ComputerVision/02_OCR/02_OCR.csproj" />
     <Project Path="Lab8-CognitiveServices/01_ComputerVision/03_FaceDetection/03_FaceDetection.csproj" />
   </Folder>
+  <Folder Name="/Lab9-OpenAI/">
+    <Project Path="Lab9-OpenAI/Chat/Chat.csproj" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path="README.md" />
   </Folder>
-  <Project Path="Lab9-OpenAI/Chat/Chat.csproj" />
 </Solution>

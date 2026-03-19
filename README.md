@@ -11,8 +11,6 @@ Lektoři:
 * [Lab 1 - Azure App Service - deployment jednoduché WebSite z Visual Studia](./Lab1-AppServicesDeployment/)
 * [Lab 2 - Azure SQL a Azure WebJobs](./Lab2-AzureSQL/)
 * [Lab 3 - Azure Blob Storage](./Lab3-AzureBlobStorage/)
-* [Lab 4 - Azure Cosmos DB](./Lab4-AzureCosmosDB/)
-* [Lab 5 - Application Insights](./Lab5-ApplicationInsights/)
 * [Lab 6 - Azure Key Vault](./Lab6-AzureKeyVault/)
 * Lab 7 - Serverless [(presentation)](./Lab7-Serverless/Serverless-computing.pptx)
     * [Lab 7a - Azure Service Bus](./Lab7-Serverless/01_ServiceBus/)
