@@ -1,0 +1,35 @@
+<Solution>
+  <Folder Name="/Lab1-AppServicesDeployment/">
+    <File Path="Lab1-AppServicesDeployment/README.md" />
+    <Project Path="Lab1-AppServicesDeployment/MyWebApplication/MyWebApplication.csproj" />
+  </Folder>
+  <Folder Name="/Lab2-AzureSQL/">
+    <File Path="Lab2-AzureSQL/README.md" />
+    <Project Path="Lab2-AzureSQL/MyWebApplication/MyWebApplication.csproj" />
+    <Project Path="Lab2-AzureSQL/MyWebJob/MyWebJob.csproj" />
+  </Folder>
+  <Folder Name="/Lab3-AzureBlobStorage/">
+    <File Path="Lab3-AzureBlobStorage/README.md" />
+    <Project Path="Lab3-AzureBlobStorage/MyWebApplication/MyWebApplication.csproj" />
+  </Folder>
+  <Folder Name="/Lab6-AzureKeyVault/">
+    <File Path="Lab6-AzureKeyVault/README.md" />
+    <Project Path="Lab6-AzureKeyVault/KeyVaultDemo/KeyVaultDemo.csproj" />
+    <Project Path="Lab6-AzureKeyVault/MyWebApplication/MyWebApplication.csproj" />
+  </Folder>
+  <Folder Name="/Lab7-Serverless/">
+    <Project Path="Lab7-Serverless/01_EventHub/EventHubPublisher/EventHubPublisher.csproj" />
+    <Project Path="Lab7-Serverless/01_EventHub/EvetHubConsumer/EvetHubConsumer.csproj" />
+    <Project Path="Lab7-Serverless/01_ServiceBus/ServiceBus.csproj" />
+    <Project Path="Lab7-Serverless/02_AzureFunctions/ZodiacFunction/ZodiacFunction.csproj" />
+  </Folder>
+  <Folder Name="/Lab8-CognitiveServices/">
+    <Project Path="Lab8-CognitiveServices/01_ComputerVision/01_ImageObjectsAnalysis/01_ImageObjectsAnalysis.csproj" />
+    <Project Path="Lab8-CognitiveServices/01_ComputerVision/02_OCR/02_OCR.csproj" />
+    <Project Path="Lab8-CognitiveServices/01_ComputerVision/03_FaceDetection/03_FaceDetection.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="Lab9-OpenAI/Chat/Chat.csproj" />
+</Solution>
