@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Lab10 - excluded scripts
+Lab10-AzureNetworking/azure_networking_scripts/10-create-peering.sh
+Lab10-AzureNetworking/azure_networking_scripts/20-create-private-endpoint.sh
