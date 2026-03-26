@@ -6,6 +6,7 @@ Lektoři:
 * [Robert Haken](https://www.linkedin.com/in/haken/)
 * [Jiří Kanda](https://www.linkedin.com/in/jirikanda/)
 * [Ondřej Václavek](https://www.linkedin.com/in/ond%C5%99ej-v%C3%A1clavek-42256956/)
+* [Daniel Hrubý](https://www.linkedin.com/in/daniel-hruby-14a79119?trk=contact-info/)
 
 ## Laby
 * [Lab 1 - Azure App Service - deployment jednoduché WebSite z Visual Studia](./Lab1-AppServicesDeployment/)
@@ -24,5 +25,4 @@ Lektoři:
     * [Lab 8d - Speech](https://github.com/Azure-Samples/cognitive-services-speech-sdk)
     * [Lab 8e - Language Studio](https://language.cognitive.azure.com/)
     * [Lab 8f - Intelligent Kiosk](https://github.com/Microsoft/Cognitive-Samples-IntelligentKiosk)
-    
-
+* [Lab 10 - Azure Networking](./Lab10-AzureNetworking/)
