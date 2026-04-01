@@ -22,9 +22,3 @@
 4. Prozkoumejte spuštěné workflow a jaké hodnoty jím putovaly
 
 ![](img/logicapp06.png)
-
-5. [OPTIONAL] Můžete vyzkoušet vytvořit Logic App přímo z Visual Studia a publikovat ji.
-Potřebné závislosti:
-- Visual Studio 2015 or 2017 or 2019 (!)
-- Microsoft Azure SDK (2.9.1 or later)
-- Azure Logic Apps Tools for VS 2017 (or 2015)
