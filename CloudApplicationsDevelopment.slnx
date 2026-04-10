@@ -31,6 +31,9 @@
   <Folder Name="/Lab9-OpenAI/">
     <Project Path="Lab9-OpenAI/Chat/Chat.csproj" />
   </Folder>
+  <Folder Name="/Lab9a-AiIntroduction/">
+    <Project Path="Lab9a-AiIntroduction/AiIntroduction/AiIntroduction.csproj" Id="6be5c61a-2155-4053-8234-83a0960bb635" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path="README.md" />
   </Folder>
